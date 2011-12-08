@@ -1,5 +1,5 @@
 package theIteratorPattern;
 
-public class Aggregate {
-
+public interface Aggregate {
+    public abstract Iterator iterator();
 }
