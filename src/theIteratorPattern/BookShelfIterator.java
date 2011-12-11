@@ -2,18 +2,26 @@ package theIteratorPattern;
 
 public class BookShelfIterator implements Iterator {
 
+    private BookShelf bookShelf;
+    private int index;
+
     public BookShelfIterator(BookShelf bookShelf) {
-        // TODO Auto-generated constructor stub
+        this.bookShelf = bookShelf;
+        this.index = 0;
     }
 
     public boolean hasNext() {
-        // TODO Auto-generated method stub
-        return false;
+        if (index < bookShelf.getLength()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public Object next() {
-        // TODO Auto-generated method stub
-        return null;
+        Book book = bookShelf.getBookAt(index);
+        index++;
+        return book;
     }
 
 }
