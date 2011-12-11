@@ -19,7 +19,6 @@ public class BookShelf implements Aggregate{
     }
     @Override
     public Iterator iterator() {
-        // TODO Auto-generated method stub
-        return null;
+        return new BookShelfIterator(this);
     }
 }
