@@ -1,6 +1,6 @@
 package theIteratorPattern;
 
-public class BookShelf {
+public class BookShelf implements Aggregate{
 
     private Book[] books;
     private int last = 0;
@@ -16,5 +16,10 @@ public class BookShelf {
     }
     public int getLength() {
         return last;
+    }
+    @Override
+    public Iterator iterator() {
+        // TODO Auto-generated method stub
+        return null;
     }
 }
