@@ -2,14 +2,14 @@ IteratorPatternを学ぶために実装してみる
 テーマとして、ゴミ箱を表現する
 [Doing]
 
-Dustクラスの作成
+DustBoxクラスを作成(Aggregate)
 
 [TODO]
 
-DustBoxクラスを作成(Aggregate)
 DustBoxIteratorクラス作成(Iterator)
 
 [Done]
 
+Dustクラスの作成
 Aggregateインターフェースを作成
 Iteratorインターフェースを作成
