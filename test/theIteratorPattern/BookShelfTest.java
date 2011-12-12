@@ -9,7 +9,7 @@ public class BookShelfTest {
 
     @Test
     public void testBookShelf() {
-        BookShelf bookShelf = new BookShelf(2);
+        BookShelf bookShelf = new BookShelf();
         bookShelf.appendBook(new Book("Book1"));
         bookShelf.appendBook(new Book("Book2"));
 
