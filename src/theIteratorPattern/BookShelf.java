@@ -1,14 +1,13 @@
 package theIteratorPattern;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class BookShelf implements Aggregate{
 
-    private List<Book> books;
+    private ArrayList<Book> books;
 
-    public BookShelf() {
-        this.books = new ArrayList<Book>();
+    public BookShelf(int initialsize) {
+        this.books = new ArrayList<Book>(initialsize);
     }
 
     public Book getBookAt(int index) {
