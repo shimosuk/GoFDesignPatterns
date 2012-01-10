@@ -6,6 +6,8 @@ DustBoxクラスを作成(Aggregate)
 
 [TODO]
 
+DustBoxで入るごみの量を決めるためにコンストラクタを実装する
+DustBoxゴミを加える
 DustBoxIteratorクラス作成(Iterator)
 
 [Done]
