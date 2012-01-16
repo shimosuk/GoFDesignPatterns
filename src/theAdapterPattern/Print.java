@@ -2,7 +2,7 @@ package theAdapterPattern;
 
 public interface Print {
 
-    public abstract void printWeak();
-    public abstract void printStrong();
+    public abstract String printWeak();
+    public abstract String printStrong();
 
 }

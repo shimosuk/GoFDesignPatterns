@@ -7,13 +7,13 @@ public class PrintBanner extends Banner implements Print{
     }
 
     @Override
-    public void printWeak() {
-        showWithParen();
+    public String printWeak() {
+        return showWithParen();
     }
 
     @Override
-    public void printStrong() {
-        showWithAster();
+    public String printStrong() {
+        return showWithAster();
     }
 
 }
