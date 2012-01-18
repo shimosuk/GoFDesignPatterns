@@ -19,9 +19,12 @@ public class DustBox implements Aggregate{
         this.dusts.add(dust);
     }
 
+    public int hasDustAmount() {
+        return dusts.size();
+    }
     @Override
     public Iterator iterator() {
-        return null;
+        return new DustBoxIterator(this);
     }
 
 }
