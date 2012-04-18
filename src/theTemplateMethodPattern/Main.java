@@ -9,6 +9,9 @@ public class Main {
 
         AbstractDisplay charDisplay = new CharDisplay('c');
         charDisplay.display();
+
+        AbstractDisplay stringDisplay = new StringDisplay("Hello! Hello?");
+        stringDisplay.display();
     }
 
 }
