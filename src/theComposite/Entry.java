@@ -2,7 +2,14 @@ package theComposite;
 
 public abstract class Entry {
 
+    /**
+     * <h1>ファイル名の取得</h1>
+     */
     public abstract String getName(); // ディレクトリエントリの名前を取得する。
+
+    /**
+     * <h1>ファイルサイズの取得</h1>
+     */
     public abstract int getSize(); // サイズを取得する。
 
     /**
@@ -25,7 +32,7 @@ public abstract class Entry {
     }
 
     /**
-     * <h1>一覧表示</h1>
+     * <h1>作成したファイルとディレクトリ構造の一覧表示</h1>
      * <p>エントリの一覧を表示するためのメソッド</p>
      * <p>引数prefixを前につけて一覧を表示する</p>
      * <p>ただし、実装はサブクラスで行う</p>
