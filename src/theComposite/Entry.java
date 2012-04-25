@@ -4,13 +4,16 @@ public abstract class Entry {
 
     /**
      * <h1>ファイル名の取得</h1>
+     * <p>ディレクトリエントリの名前を取得する。</p>
      */
-    public abstract String getName(); // ディレクトリエントリの名前を取得する。
+    public abstract String getName();
 
     /**
      * <h1>ファイルサイズの取得</h1>
+     * <p>Fileクラスでは自身のサイズを取得する。</p>
+     * <p>Directoryでは配下のサイズを算出する</p>
      */
-    public abstract int getSize(); // サイズを取得する。
+    public abstract int getSize();
 
     /**
      * <h1>エントリを追加する</h1>
@@ -20,7 +23,6 @@ public abstract class Entry {
      * @throws FileTreatmentException
      */
     public Entry add(Entry entry) throws FileTreatmentException {
-        // FileTreatmentExceptionはRuntimeExceptionを継承したクラスを作成している。詳細は後ほどらしい。
         throw new FileTreatmentException();
     }
 
@@ -28,7 +30,7 @@ public abstract class Entry {
      * <h1>中身の一覧を表示する。<h1>
      */
     public void printList() {
-        printList(""); // オーバーロードする。
+        printList(""); // オーバーロードしているメソッドを呼び出す。
     }
 
     /**

@@ -3,6 +3,7 @@ package theComposite;
 /**
  * <h1>ファイルクラスに対してaddした際に投げるエラー</h1>
  * <p>Javaのクラスライブラリで提供されているものではなく、自作のエラー</p>
+ * <p>RuntimeExceptionを継承している</p>
  * @author shimosuk
  *
  */

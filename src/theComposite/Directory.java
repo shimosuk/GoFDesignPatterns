@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Directory extends Entry {
 
-    public String name;
-    public List<Entry> directory = new ArrayList<Entry>(); // Entry保持のためのフィールド。直下にいくつエントリを持っているかを表す
-    // sizeが無いのは、サイズを動的に計算するため
+    private String name;
+    private List<Entry> directory = new ArrayList<Entry>(); // Entry保持のためのフィールド。直下にいくつエントリを持っているかを表す
+    // Directory自身ではサイズを持たず、getSizeメソッドで動的に計算する
 
     public Directory(String name) {
         this.name = name;
@@ -25,7 +25,7 @@ public class Directory extends Entry {
         Iterator<Entry> iterator = this.directory.iterator();
         while (iterator.hasNext()) {
             Entry entry = (Entry) iterator.next();
-            size += entry.getSize(); // 再帰的構造
+            size += entry.getSize(); // 再帰的構造（FileクラスもDirectoryクラスも意識しなくて良い）
         }
         return size;
     }
