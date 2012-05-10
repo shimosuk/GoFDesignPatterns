@@ -7,5 +7,8 @@ package the.factory.method.pattern.framework;
  */
 public abstract class Product {
 
+    /**
+     * 使えるものを示すメソッド
+     */
     public abstract void use();
 }
